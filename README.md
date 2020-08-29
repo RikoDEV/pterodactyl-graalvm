@@ -1,5 +1,4 @@
-# pterodactyl-graalvm
-GraalVM Pterodactyl Image
+![Pterodactyl GraalVM](https://i.imgur.com/h2qEqfn.png)
 
 ___
 ## Docker Container Configuration

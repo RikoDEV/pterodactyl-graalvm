@@ -3,13 +3,12 @@
 # Environment: Java
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM oracle/graalvm-ce
+FROM lustefaniak/graalvm:11
 
 MAINTAINER RikoDEV, <kontakt@riko.dev>
 
-RUN yum update -y \
- && yum install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
- && useradd -d /home/container -m container
+RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
+    && adduser -D -h /home/container container
 
 USER container
 ENV  USER=container HOME=/home/container

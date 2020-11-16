@@ -4,3 +4,6 @@ ___
 ## Docker Container Configuration
 
 > quay.io/rikodev/pterodactyl-graalvm:latest
+___
+## Build date
+November 16, 2020

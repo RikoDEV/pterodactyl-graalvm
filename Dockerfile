@@ -7,7 +7,7 @@ FROM lustefaniak/graalvm:11
 
 MAINTAINER RikoDEV, <kontakt@riko.dev>
 
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
+RUN apt-get update && apt-get install -y curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser -D -h /home/container container
 
 USER container

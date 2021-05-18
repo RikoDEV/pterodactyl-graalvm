@@ -1,4 +1,4 @@
-# Pterodactyl & GraalVM 16
+# Pterodactyl & GraalVM + Java 16
 
 GraalVM is a high-performance runtime that provides significant improvements in application performance and efficiency which is ideal for microservices. https://www.graalvm.org/
 

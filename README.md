@@ -10,7 +10,7 @@ GraalVM is a high-performance runtime that provides significant improvements in 
 
 > quay.io/mianotfake/pterodactyl-graalvm:latest
 
-## Versions: 
+## Versions
 - GraalVM 21.0.0
 - Java 16
 

@@ -3,6 +3,5 @@ GraalVM is a high-performance runtime that provides significant improvements in 
 ___
 ## Docker Container Configuration
 
+### Version: GraalVM 21.3.0 | Java 11
 > quay.io/rikodev/pterodactyl-graalvm:latest
-___
-## Version: GraalVM 21.3.0

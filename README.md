@@ -5,4 +5,4 @@ ___
 
 > quay.io/rikodev/pterodactyl-graalvm:latest
 ___
-## Version: GraalVM 21.0.0
+## Version: GraalVM 21.3.0

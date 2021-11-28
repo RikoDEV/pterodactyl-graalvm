@@ -10,3 +10,7 @@ or
 
 ### Version: GraalVM 21.3.0 | Java 17
 > quay.io/rikodev/pterodactyl-graalvm:17
+
+___
+## Sponsor
+[![poszukaj.se](https://poszukaj.se/storage/branding/wetrackyouplay.jpg)](https://poszukaj.se/)

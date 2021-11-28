@@ -5,3 +5,8 @@ ___
 
 ### Version: GraalVM 21.3.0 | Java 11
 > quay.io/rikodev/pterodactyl-graalvm:latest
+or
+> quay.io/rikodev/pterodactyl-graalvm:11
+
+### Version: GraalVM 21.3.0 | Java 17
+> quay.io/rikodev/pterodactyl-graalvm:17

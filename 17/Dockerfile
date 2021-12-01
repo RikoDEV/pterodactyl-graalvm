@@ -3,7 +3,7 @@
 # Environment: Java
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM findepi/graalvm:java17
+FROM lustefaniak/graalvm:17
 
 MAINTAINER RikoDEV, <kontakt@riko.dev>
 

@@ -3,12 +3,12 @@
 # Environment: Java
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM lustefaniak/graalvm:17
+FROM findepi/graalvm:java17
 
 MAINTAINER RikoDEV, <kontakt@riko.dev>
 
 RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+ && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
  && useradd -d /home/container -m container
 
 USER container

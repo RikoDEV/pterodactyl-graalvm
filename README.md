@@ -1,4 +1,4 @@
-![Pterodactyl GraalVM](https://i.imgur.com/h2qEqfn.png)
+![Pterodactyl GraalVM](https://i.imgur.com/06WBUID.png)
 ![build graalvm](https://github.com/RikoDEV/pterodactyl-graalvm/actions/workflows/docker-image.yml/badge.svg)
 ![license mit](https://img.shields.io/badge/license-MIT-green)
 

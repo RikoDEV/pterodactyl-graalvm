@@ -17,6 +17,8 @@ jobs:
           - 11
           - 17
           - 19
+          - 11-EE
+          - 17-EE
     steps:
       - name: Checkout
         uses: actions/checkout@v3

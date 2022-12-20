@@ -15,8 +15,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
  && export ARCH=$(case ${TARGETPLATFORM:-linux/amd64} in \
-    "linux/amd64")   echo "amd64"  ;; \
-    "linux/arm64")   echo "aarch64" ;; \
+    "linux/amd64")   echo "linux-amd64"  ;; \
+    "linux/arm64")   echo "linux-aarch64" ;; \
     *)               echo ""        ;; esac) \
   && echo "ARCH=$ARCH" \
   && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://oca.opensource.oracle.com/gds/GRAALVM_EE_JAVA17_22_3_0/graalvm-ee-java17-${ARCH}-22.3.0.tar.gz \

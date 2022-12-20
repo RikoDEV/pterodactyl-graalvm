@@ -16,7 +16,7 @@ RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
  && export ARCH=$(case ${TARGETPLATFORM:-linux/amd64} in \
     "linux/amd64")   echo "linux-amd64"  ;; \
-    "linux/arm64")   echo "darwin-aarch64" ;; \
+    "linux/arm64")   echo "linux-aarch64" ;; \
     *)               echo ""        ;; esac) \
   && echo "ARCH=$ARCH" \
   && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://oca.opensource.oracle.com/gds/GRAALVM_EE_JAVA11_22_3_0/graalvm-ee-java11-${ARCH}-22.3.0.tar.gz \

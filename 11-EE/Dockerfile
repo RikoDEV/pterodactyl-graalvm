@@ -15,11 +15,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
  && export ARCH=$(case ${TARGETPLATFORM:-linux/amd64} in \
-    "linux/amd64")   echo "amd64"  ;; \
-    "linux/arm64")   echo "aarch64" ;; \
+    "linux/amd64")   echo "linux-amd64"  ;; \
+    "linux/arm64")   echo "darwin-aarch64" ;; \
     *)               echo ""        ;; esac) \
   && echo "ARCH=$ARCH" \
-  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://oca.opensource.oracle.com/gds/GRAALVM_EE_JAVA${JAVA_VERSION}_${GRAAL_VERSION//./_}/graalvm-ee-java${JAVA_VERSION}-linux-${ARCH}-${GRAAL_VERSION}.tar.gz \
+  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://oca.opensource.oracle.com/gds/GRAALVM_EE_JAVA${JAVA_VERSION}_${GRAAL_VERSION//./_}/graalvm-ee-java${JAVA_VERSION}-${ARCH}-${GRAAL_VERSION}.tar.gz \
   && mkdir -p /opt/java/graalvm \
   && cd /opt/java/graalvm \
   && tar -xf /tmp/graalvm.tar.gz --strip-components=1 \

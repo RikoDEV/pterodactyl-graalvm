@@ -1,4 +1,4 @@
-![Pterodactyl GraalVM](https://i.imgur.com/06WBUID.png)
+![Pterodactyl GraalVM](https://user-images.githubusercontent.com/18230443/209179431-6adf6e6c-09fd-4501-b420-90c5b1dd09e1.jpg)
 ![build graalvm](https://github.com/RikoDEV/pterodactyl-graalvm/actions/workflows/docker-image.yml/badge.svg)
 ![license mit](https://img.shields.io/badge/license-MIT-green)
 
@@ -32,4 +32,4 @@ ___
 
 ## Sponsor
 
-[![poszukaj.se](https://poszukaj.se/storage/branding/wetrackyouplay.jpg)](https://poszukaj.se/)
+[![poszukaj.se](https://poszukaj.se/storage/branding/banner.jpg)](https://poszukaj.se/)

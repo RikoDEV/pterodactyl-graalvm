@@ -5,7 +5,7 @@
 # ----------------------------------
 FROM ubuntu:22.04
 
-ARG GRAAL_VERSION=22.3.0
+ARG GRAAL_VERSION=22.3.1
 ARG JAVA_VERSION=17
 
 MAINTAINER RikoDEV, <kontakt@riko.dev>
@@ -19,7 +19,7 @@ RUN apt-get update -y \
     "linux/arm64")   echo "linux-aarch64" ;; \
     *)               echo ""        ;; esac) \
   && echo "ARCH=$ARCH" \
-  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://oca.opensource.oracle.com/gds/GRAALVM_EE_JAVA17_22_3_0/graalvm-ee-java17-${ARCH}-22.3.0.tar.gz \
+  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://oca.opensource.oracle.com/gds/GRAALVM_EE_JAVA17_22_3_1/graalvm-ee-java17-${ARCH}-22.3.1.tar.gz \
   && mkdir -p /opt/java/graalvm \
   && cd /opt/java/graalvm \
   && tar -xf /tmp/graalvm.tar.gz --strip-components=1 \

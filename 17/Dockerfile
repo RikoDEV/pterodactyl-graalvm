@@ -5,7 +5,7 @@
 # ----------------------------------
 FROM ubuntu:22.04
 
-ARG GRAAL_VERSION=22.3.0
+ARG GRAAL_VERSION=22.3.1
 ARG JAVA_VERSION=17
 
 MAINTAINER RikoDEV, <kontakt@riko.dev>

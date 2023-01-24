@@ -8,7 +8,7 @@ ___
 
 ## Docker Container Configuration
 
-### Version: GraalVM (CE, Community Edition) 22.3.0 | Java 11
+### Version: GraalVM (CE, Community Edition) 22.3.1 | Java 11
 
 > ghcr.io/rikodev/pterodactyl-graalvm:11
 
@@ -16,7 +16,7 @@ ___
 
 > ghcr.io/rikodev/pterodactyl-graalvm:11-EE
 
-### Version: GraalVM (CE, Community Edition) 22.3.0 | Java 17
+### Version: GraalVM (CE, Community Edition) 22.3.1 | Java 17
 
 > ghcr.io/rikodev/pterodactyl-graalvm:17
 
@@ -24,9 +24,11 @@ ___
 
 > ghcr.io/rikodev/pterodactyl-graalvm:17-EE
 
-### Version: GraalVM (CE, Community Edition) 22.3.0 | Java 19
+### Version: GraalVM (CE, Community Edition) 22.3.1 | Java 19
 
 > ghcr.io/rikodev/pterodactyl-graalvm:19
+
+**Enterprise Edition (EE):** Not available
 
 ___
 

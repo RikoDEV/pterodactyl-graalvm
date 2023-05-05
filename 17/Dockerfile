@@ -14,9 +14,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y \
   && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
+  && echo "CURRENT TARGET = $TARGETPLATFORM" \
   && case ${TARGETPLATFORM} in \
-         "linux/amd64")  ARCH=amd64  ;; \
-         "linux/arm64")  ARCH=aarch64  ;; \
+         "amd64")  ARCH=amd64  ;; \
+         "arm64")  ARCH=aarch64  ;; \
     esac \
   && echo "CURRENT ARCH = $ARCH" \
   && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${GRAAL_VERSION}/graalvm-ce-java${JAVA_VERSION}-linux-${ARCH}-${GRAAL_VERSION}.tar.gz \

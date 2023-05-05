@@ -5,6 +5,7 @@
 # ----------------------------------
 FROM ubuntu:22.04
 
+ARG TARGETPLATFORM
 ARG GRAAL_VERSION=22.3.1
 ARG JAVA_VERSION=19
 
@@ -13,12 +14,11 @@ MAINTAINER RikoDEV, <kontakt@riko.dev>
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
- && export ARCH=$(case ${TARGETPLATFORM:-linux/amd64} in \
-    "linux/amd64")   echo "amd64"  ;; \
-    "linux/arm64")   echo "aarch64" ;; \
-    *)               echo ""        ;; esac) \
-  && echo "ARCH=$ARCH" \
+  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
+  && case ${TARGETPLATFORM} in \
+         "linux/amd64")  ARCH=amd64  ;; \
+         "linux/arm64")  ARCH=aarch64  ;; \
+    esac \
   && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${GRAAL_VERSION}/graalvm-ce-java${JAVA_VERSION}-linux-${ARCH}-${GRAAL_VERSION}.tar.gz \
   && mkdir -p /opt/java/graalvm \
   && cd /opt/java/graalvm \

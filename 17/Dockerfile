@@ -5,6 +5,7 @@
 # ----------------------------------
 FROM --platform=$BUILDPLATFORM ubuntu:22.04
 
+ARG TARGETPLATFORM
 ARG GRAAL_VERSION=22.3.2
 ARG JAVA_VERSION=17
 
@@ -16,8 +17,8 @@ RUN apt-get update -y \
   && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
   && echo "CURRENT TARGET = $TARGETPLATFORM" \
   && case ${TARGETPLATFORM} in \
-         "amd64")  ARCH=amd64  ;; \
-         "arm64")  ARCH=aarch64  ;; \
+         "linux/amd64")  ARCH=amd64  ;; \
+         "linux/arm64")  ARCH=aarch64  ;; \
     esac \
   && echo "CURRENT ARCH = $ARCH" \
   && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${GRAAL_VERSION}/graalvm-ce-java${JAVA_VERSION}-linux-${ARCH}-${GRAAL_VERSION}.tar.gz \

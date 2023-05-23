@@ -34,4 +34,4 @@ ___
 
 ## Sponsor
 
-[![poszukaj.se](https://poszukaj.se/storage/branding/banner.jpg)](https://poszukaj.se/)
+[![playbase.pro](https://poszukaj.se/storage/branding/banner.jpg)](https://playbase.pro/en)

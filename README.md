@@ -30,7 +30,7 @@ ___
 
 **Enterprise Edition (EE):** Not available
 
-### Version: GraalVM (CE, Community Edition) 20.0.1 | Java 20
+### Version: GraalVM (CE, Community Edition) 20.0.2 | Java 20
 
 > ghcr.io/rikodev/pterodactyl-graalvm:20-JDK
 

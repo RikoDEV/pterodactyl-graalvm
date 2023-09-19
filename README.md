@@ -8,7 +8,7 @@ ___
 
 ## Docker Container Configuration
 
-### Version: GraalVM (CE, Community Edition) 22.3.2 | Java 11
+### Version: GraalVM (CE, Community Edition) 22.3.3 | Java 11
 
 > ghcr.io/rikodev/pterodactyl-graalvm:11
 
@@ -16,7 +16,7 @@ ___
 
 > ghcr.io/rikodev/pterodactyl-graalvm:11-EE
 
-### Version: GraalVM (CE, Community Edition) 22.3.2 | Java 17
+### Version: GraalVM (CE, Community Edition) 22.3.3 | Java 17
 
 > ghcr.io/rikodev/pterodactyl-graalvm:17
 
@@ -24,13 +24,22 @@ ___
 
 > ghcr.io/rikodev/pterodactyl-graalvm:17-EE
 
-### Version: GraalVM (CE, Community Edition) 22.3.2 | Java 19
+**Java Development Kit Edition (JDK) 17.0.8:**
+> ghcr.io/rikodev/pterodactyl-graalvm:17-JDK
+
+### Version: GraalVM (CE, Community Edition) 22.3.1 | Java 19
 
 > ghcr.io/rikodev/pterodactyl-graalvm:19
 
 **Enterprise Edition (EE):** Not available
 
-### Version: GraalVM (CE, Community Edition) 20.0.2 | Java 20
+### Version: GraalVM JDK 20.0.2 | Java 20
+
+> ghcr.io/rikodev/pterodactyl-graalvm:20-JDK
+
+**Enterprise Edition (EE):** Not available
+
+### Version: GraalVM JDK 21.0.0 | Java 21
 
 > ghcr.io/rikodev/pterodactyl-graalvm:20-JDK
 
@@ -40,4 +49,4 @@ ___
 
 ## Sponsor
 
-[![playbase.pro](https://poszukaj.se/storage/branding/banner.jpg)](https://playbase.pro/en)
+[![playbase.pro](https://playbase.pro/storage/branding/banner.jpg)](https://playbase.pro/en)

@@ -20,6 +20,7 @@ jobs:
           - 17-JDK
           - 20-JDK
           - 21-JDK
+          - 22-JDK
           - 11-EE
           - 17-EE
     steps:

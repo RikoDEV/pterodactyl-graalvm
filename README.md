@@ -8,42 +8,14 @@ ___
 
 ## Docker Container Configuration
 
-### Version: GraalVM (CE, Community Edition) 22.3.3 | Java 11
-
-> ghcr.io/rikodev/pterodactyl-graalvm:11
-
-**Enterprise Edition (EE):**
-
-> ghcr.io/rikodev/pterodactyl-graalvm:11-EE
-
-### Version: GraalVM (CE, Community Edition) 22.3.3 | Java 17
-
-> ghcr.io/rikodev/pterodactyl-graalvm:17
-
-**Enterprise Edition (EE):**
-
-> ghcr.io/rikodev/pterodactyl-graalvm:17-EE
-
-**Java Development Kit Edition (JDK) 17.0.8:**
-> ghcr.io/rikodev/pterodactyl-graalvm:17-JDK
-
-### Version: GraalVM (CE, Community Edition) 22.3.1 | Java 19
-
-> ghcr.io/rikodev/pterodactyl-graalvm:19
-
-**Enterprise Edition (EE):** Not available
-
-### Version: GraalVM JDK 20.0.2 | Java 20
-
-> ghcr.io/rikodev/pterodactyl-graalvm:20-JDK
-
-**Enterprise Edition (EE):** Not available
-
-### Version: GraalVM JDK 21.0.0 | Java 21
-
-> ghcr.io/rikodev/pterodactyl-graalvm:20-JDK
-
-**Enterprise Edition (EE):** Not available
+| Java | Standard                               	| JDK                                        	| Enterprise                                	|
+|------	|----------------------------------------	|--------------------------------------------	|-------------------------------------------	|
+| 11    | `ghcr.io/rikodev/pterodactyl-graalvm:11` 	| ❌                                          	| `ghcr.io/rikodev/pterodactyl-graalvm:11-EE` 	|
+| 17    | `ghcr.io/rikodev/pterodactyl-graalvm:17` 	| `ghcr.io/rikodev/pterodactyl-graalvm:17-JDK` 	| `ghcr.io/rikodev/pterodactyl-graalvm:17-EE` 	|
+| 19   	| `ghcr.io/rikodev/pterodactyl-graalvm:19` 	| ❌                                          	| ❌                                         	|
+| 20   	| ❌                                     	| `ghcr.io/rikodev/pterodactyl-graalvm:20-JDK` 	| ❌                                         	|
+| 21   	| ❌                                     	| `ghcr.io/rikodev/pterodactyl-graalvm:21-JDK` 	| ❌                                         	|
+| 22    | ❌                                     	| `ghcr.io/rikodev/pterodactyl-graalvm:22-JDK` 	| ❌                                         	|
 
 ___
 

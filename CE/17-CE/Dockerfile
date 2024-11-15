@@ -9,7 +9,7 @@ ARG TARGETPLATFORM
 ARG GRAAL_VERSION=22.3.3
 ARG JAVA_VERSION=17
 
-MAINTAINER RikoDEV, <kontakt@riko.dev>
+MAINTAINER Tommaso Benatti, <tommaso.benatti@outlook.com>
 
 ENV DEBIAN_FRONTEND=noninteractive
 

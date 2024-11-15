@@ -22,7 +22,6 @@ jobs:
           #- EE/11-EE
           #- EE/17-EE
           - JDK/17-JDK
-          - JDK/19-JDK
           - JDK/20-JDK
           - JDK/21-JDK
           - JDK/22-JDK

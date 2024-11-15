@@ -17,13 +17,10 @@ jobs:
           - 11
           - 17
           - 19
-          - 17-JDK
-          - 20-JDK
-          - 21-JDK
-          - 22-JDK
-          - 23-JDK
-          - 11-EE
-          - 17-EE
+          - 20
+          - 21
+          - 22
+          - 23
     steps:
       - name: Checkout
         uses: actions/checkout@v3

@@ -3,13 +3,13 @@
 # Environment: Java
 # Minimum Panel Version: 1.7.0
 # ----------------------------------
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 ARG TARGETPLATFORM
 ARG GRAAL_VERSION=22.3.3
 ARG JAVA_VERSION=11
 
-MAINTAINER RikoDEV, <kontakt@riko.dev>
+MAINTAINER Tommaso Benatti, <tommaso.benatti@outlook.com>
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -17,7 +17,27 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 RUN apt-get update -y \
-  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata locales iproute2 \
+  && apt-get install -y --no-install-recommends \
+      apt-transport-https \
+      apt-utils \
+      ca-certificates \
+      curl \
+      fontconfig \
+      git \
+      gnupg2 \
+      iproute2 \
+      java-common \
+      locales \
+      openssl \
+      procps \
+      software-properties-common \
+      sqlite3 \
+      tar \
+      tzdata \
+      wget \
+      libfreetype6 \
+      build-essential \
+      zlib1g-dev \
   && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
   && locale-gen en_US.UTF-8 \
   && case ${TARGETPLATFORM} in \

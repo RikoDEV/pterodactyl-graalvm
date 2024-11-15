@@ -36,6 +36,7 @@ RUN apt-get update -y \
       wget \
       libfreetype6 \
       build-essential \
+      zlib1g-dev \
   && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
   && locale-gen en_US.UTF-8 \
   && case ${TARGETPLATFORM} in \

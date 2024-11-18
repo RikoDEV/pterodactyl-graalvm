@@ -3,7 +3,7 @@
 # Environment: Java
 # Minimum Panel Version: 1.7.0
 # ----------------------------------
-FROM ubuntu:24.04
+FROM debian:bookworm
 
 ARG GRAAL_VERSION=21.2.0
 ARG JAVA_VERSION=8

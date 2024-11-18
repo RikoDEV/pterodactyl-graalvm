@@ -44,9 +44,6 @@ export TZ
 INTERNAL_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
 export INTERNAL_IP
 
-# Switch to the container's working directory
-cd /home/container || exit 1
-
 # system informations
 echo -e "${BLUE}---------------------------------------------------------------------${NC}"
 echo -e "${RED}Java GraalVM Image by tommaso.benatti@mcexp.it${NC}"
@@ -65,4 +62,4 @@ PARSED=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g' | eval echo "$(cat
 # from the container itself.
 printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0m%s\n" "$PARSED"
 # shellcheck disable=SC2086
-eval ${PARSED}
+exec env ${PARSED}

@@ -6,7 +6,7 @@
     FROM debian:bookworm-slim
 
     ARG TARGETPLATFORM
-    ARG JAVA_VERSION=jdk-24.0.0-ea.24
+    ARG JAVA_VERSION=jdk-24.0.0-ea.34
     
     MAINTAINER Tommaso Benatti, <tommaso.benatti@outlook.com>
     

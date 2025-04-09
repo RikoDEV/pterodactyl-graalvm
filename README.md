@@ -17,6 +17,7 @@ ___
 | 21   | ❌                                     	 | `ghcr.io/rikodev/pterodactyl-graalvm:21-JDK`	| ❌                                          |
 | 22   | ❌                                     	 | `ghcr.io/rikodev/pterodactyl-graalvm:22-JDK`	| ❌                                          |
 | 23   | ❌                                     	 | `ghcr.io/rikodev/pterodactyl-graalvm:23-JDK`	| ❌                                          |
+| 24   | ❌                                     	 | `ghcr.io/rikodev/pterodactyl-graalvm:24-JDK`	| ❌                                          |
 
 ___
 

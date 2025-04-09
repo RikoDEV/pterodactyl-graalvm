@@ -6,7 +6,7 @@
 FROM ubuntu:22.04
 
 ARG TARGETPLATFORM
-ARG GRAAL_VERSION=23.0.0
+ARG GRAAL_VERSION=23.0.2
 ARG JAVA_VERSION=23
 
 MAINTAINER RikoDEV, <kontakt@riko.dev>
@@ -17,7 +17,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 RUN apt-get update -y \
-  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata locales iproute2 \
+  && apt-get install -y --no-install-recommends curl ca-certificates openssl git tar sqlite3 fontconfig tzdata locales iproute2 \
   && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
   && locale-gen en_US.UTF-8 \
   && case ${TARGETPLATFORM} in \

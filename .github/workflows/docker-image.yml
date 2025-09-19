@@ -27,6 +27,7 @@ jobs:
           - JDK/22
           - JDK/23
           - JDK/24
+          - JDK/25
     steps:
       - name: Checkout
         uses: actions/checkout@v3

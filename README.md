@@ -19,6 +19,7 @@ ___
 | 22   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-22` |                                                    | ❌                             |
 | 23   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-23` |                                                    | ❌                             |
 | 24   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-24` |                                                    | ❌                             |
+| 25   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-25` |                                                    | ❌                             |
 
 ___
 

@@ -3,13 +3,13 @@
 # Environment: Java
 # Minimum Panel Version: 1.7.0
 # ----------------------------------
-  FROM debian:bookworm-slim
+  FROM debian:trixie-slim
 
   ARG TARGETPLATFORM
   ARG JAVA_VERSION=17
   ARG GRAAL_JDK_VERSION=17.0.12
   
-  MAINTAINER Tommaso Benatti, <tommaso.benatti@outlook.com>
+  LABEL maintainer="Tommaso Benatti <tommaso.benatti@outlook.com>"
   
   ENV DEBIAN_FRONTEND=noninteractive
   

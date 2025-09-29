@@ -14,12 +14,12 @@ ___
 | 11   | ❌                                                  | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-11` | (Not available at the moment)  |
 | 17   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-17` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-17` | (Not available at the moment)   |
 | 19   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-19` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-19` | ❌                             |
-| 20   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-20` |                                                    | ❌                             |
-| 21   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-21` |                                                    | ❌                             |
-| 22   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-22` |                                                    | ❌                             |
-| 23   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-23` |                                                    | ❌                             |
-| 24   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-24` |                                                    | ❌                             |
-| 25   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-25` |                                                    | ❌                             |
+| 20   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-20` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-20` | ❌                             |
+| 21   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-21` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-21` | ❌                             |
+| 22   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-22` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-22` | ❌                             |
+| 23   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-23` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-23` | ❌                             |
+| 24   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-24` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-24` | ❌                             |
+| 25   | `ghcr.io/tommasobenatti/pterodactyl-graalvm:JDK-25` | `ghcr.io/tommasobenatti/pterodactyl-graalvm:CE-25` | ❌                             |
 
 ___
 

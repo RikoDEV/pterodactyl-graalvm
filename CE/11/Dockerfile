@@ -9,7 +9,7 @@ ARG TARGETPLATFORM
 ARG GRAAL_VERSION=22.3.3
 ARG JAVA_VERSION=11
 
-MAINTAINER Tommaso Benatti, <tommaso.benatti@outlook.com>
+LABEL maintainer="Tommaso Benatti <tommaso.benatti@outlook.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
 

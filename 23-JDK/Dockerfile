@@ -3,7 +3,7 @@
 # Environment: Java
 # Minimum Panel Version: 1.7.0
 # ----------------------------------
-FROM ubuntu:22.04
+FROM ubuntu:26.04
 
 ARG TARGETPLATFORM
 ARG GRAAL_VERSION=23.0.2
@@ -34,6 +34,12 @@ RUN apt-get update -y \
 
 ENV JAVA_HOME=/opt/java/graalvm \
     PATH="/opt/java/graalvm/bin:$PATH"
+
+# Mitigate CVE-2026-91403: distrust compromised eMudhra CAs and enforce revocation checks
+COPY        ./../cve-2026-91403.sh /tmp/cve-2026-91403.sh
+RUN bash /tmp/cve-2026-91403.sh && rm -f /tmp/cve-2026-91403.sh
+
+ENV JAVA_TOOL_OPTIONS="-Dcom.sun.net.ssl.checkRevocation=true -Dcom.sun.security.enableCRLDP=true"
 
 # Step 2 - add pterodactyl stuff
 RUN useradd -d /home/container -m container
